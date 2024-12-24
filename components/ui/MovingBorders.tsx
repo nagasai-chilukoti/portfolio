@@ -10,7 +10,7 @@ import {
 import { cn } from "@/utils/cn";
 
 // Typing the props properly
-interface ButtonProps {
+interface ButtonProps extends React.HTMLProps<HTMLElement> {
     borderRadius?: string;
     children: React.ReactNode;
     as?: React.ElementType;  // Accepts any React component type (e.g., button, div, etc.)
@@ -18,7 +18,6 @@ interface ButtonProps {
     borderClassName?: string;
     duration?: number;
     className?: string;
-    [key: string]: any;  // Allows any additional props but ideally should be more specific
 }
 
 export function Button({
@@ -71,12 +70,11 @@ export function Button({
     );
 }
 
-interface MovingBorderProps {
+interface MovingBorderProps extends React.SVGProps<SVGSVGElement> {
     children: React.ReactNode;
     duration?: number;
     rx?: string;
     ry?: string;
-    [key: string]: any;
 }
 
 export const MovingBorder = ({
