@@ -21,7 +21,7 @@ export default function Home() {
         {/* will add clients when have testimonial and clients/companies */}
         {/* <Clients /> */}
         {/* will add experiences after once i'll have them */}
-        {/* <Experience /> */}
+        <Experience />
         {/* <Approach /> */}
         <Footer />
 
