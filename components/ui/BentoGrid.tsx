@@ -60,7 +60,7 @@ export const BentoGridItem = ({
 
     const [copied, setCopied] = useState(false);
     const handleCopy = () => {
-        navigator.clipboard.writeText('nagasaichilukoti7136@gmail.com')
+        navigator.clipboard.writeText('laibasif36@gmail.com')
         setCopied(true)
     }
 
@@ -135,7 +135,7 @@ export const BentoGridItem = ({
                     {id === 3 && (
                         <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
                             <div className="flex flex-col gap-3 lg:gap-4">
-                                {['Java', 'Python', 'MySQL'].map((item) => (
+                                {['ReactJs', 'NextJs', 'TypeScript'].map((item) => (
                                     <span key={item} className="py-2 lg:py-2 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]">{item}</span>
 
                                 ))}
@@ -143,7 +143,7 @@ export const BentoGridItem = ({
                             </div>
                             <div className="flex flex-col gap-3 lg:gap-4">
                                 <span className="py-4 px-3 roundedd-lg text-center bg-[#10132e]" />
-                                {['HTML', 'JS', 'PHP'].map((item) => (
+                                {['Express', 'MongoDb', 'NodeJs'].map((item) => (
                                     <span key={item} className="py-2 lg:py-2 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132e]">{item}</span>
 
                                 ))}
