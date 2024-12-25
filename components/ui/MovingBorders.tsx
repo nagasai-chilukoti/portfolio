@@ -1,5 +1,5 @@
 "use client";
-import React, { useRef } from "react";
+import React from "react";
 import {
     motion,
     useAnimationFrame,
@@ -7,29 +7,28 @@ import {
     useMotionValue,
     useTransform,
 } from "framer-motion";
+import { useRef } from "react";
 import { cn } from "@/utils/cn";
-
-// Typing the props properly
-interface ButtonProps extends React.ComponentPropsWithRef<"button"> {
-    borderRadius?: string;
-    children: React.ReactNode;
-    as?: React.ElementType;  // Accepts any React component type (e.g., button, div, etc.)
-    containerClassName?: string;
-    borderClassName?: string;
-    duration?: number;
-    className?: string;
-}
 
 export function Button({
     borderRadius = "1.75rem",
     children,
-    as: Component = "button",  // Default to button element
+    as: Component = "button",
     containerClassName,
     borderClassName,
     duration,
     className,
     ...otherProps
-}: ButtonProps) {
+}: {
+    borderRadius?: string;
+    children: React.ReactNode;
+    as?: any;
+    containerClassName?: string;
+    borderClassName?: string;
+    duration?: number;
+    className?: string;
+    [key: string]: any;
+}) {
     return (
         <Component
             className={cn(
@@ -70,21 +69,20 @@ export function Button({
     );
 }
 
-interface MovingBorderProps extends React.SVGProps<SVGSVGElement> {
-    children: React.ReactNode;
-    duration?: number;
-    rx?: string;
-    ry?: string;
-}
-
 export const MovingBorder = ({
     children,
     duration = 2000,
     rx,
     ry,
     ...otherProps
-}: MovingBorderProps) => {
-    const pathRef = useRef<SVGRectElement | null>(null); // Updated ref type
+}: {
+    children: React.ReactNode;
+    duration?: number;
+    rx?: string;
+    ry?: string;
+    [key: string]: any;
+}) => {
+    const pathRef = useRef<any>();
     const progress = useMotionValue<number>(0);
 
     useAnimationFrame((time) => {
@@ -114,7 +112,7 @@ export const MovingBorder = ({
                 className="absolute h-full w-full"
                 width="100%"
                 height="100%"
-                {...(otherProps as React.SVGProps<SVGSVGElement>)} // Correctly typed otherProps
+                {...otherProps}
             >
                 <rect
                     fill="none"
@@ -122,7 +120,7 @@ export const MovingBorder = ({
                     height="100%"
                     rx={rx}
                     ry={ry}
-                    ref={pathRef as React.RefObject<SVGRectElement>} // Correct ref type
+                    ref={pathRef}
                 />
             </svg>
             <motion.div
