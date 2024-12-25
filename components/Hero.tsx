@@ -1,6 +1,6 @@
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
-import { TextGenerateEffect } from './ui/TextGenerateEffect'
+import { TextGenerateEffect } from './ui/text-generate-effect'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa'
 
@@ -24,7 +24,7 @@ const Hero = () => {
 
                     <TextGenerateEffect className='text-center text-[40px] md:text-5xl lg:text-5xl' words='Transforming Concepts Into Seamless User Experiences' />
 
-                    <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'> Hi I&apos;m NagaSai, a undergraduate student</p>
+                    <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'> Hi I&apos;m Laiba, a NextJs Developer based in Pakistan</p>
                     <a href="#projects">
                         <MagicButton
                             title="Show my work"
