@@ -1,11 +1,12 @@
 
-
+import Clients from "@/components/Clients";
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from '@/components/ui/FloatingNav';
 import { navItems } from "@/data";
-
+import Experience from '@/components/Experience';
+import Approach from "@/components/Approach";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
         {/* will add clients when have testimonial and clients/companies */}
         {/* <Clients /> */}
         {/* will add experiences after once i'll have them */}
-        <Experience />
+        {/* <Experience /> */}
         {/* <Approach /> */}
         <Footer />
 
