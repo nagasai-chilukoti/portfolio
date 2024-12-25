@@ -10,7 +10,7 @@ import {
 import { cn } from "@/utils/cn";
 
 // Typing the props properly
-interface ButtonProps extends React.HTMLProps<HTMLElement> {
+interface ButtonProps extends React.ComponentPropsWithRef<"button"> {
     borderRadius?: string;
     children: React.ReactNode;
     as?: React.ElementType;  // Accepts any React component type (e.g., button, div, etc.)
@@ -23,7 +23,7 @@ interface ButtonProps extends React.HTMLProps<HTMLElement> {
 export function Button({
     borderRadius = "1.75rem",
     children,
-    as: Component = "button",
+    as: Component = "button",  // Default to button element
     containerClassName,
     borderClassName,
     duration,
