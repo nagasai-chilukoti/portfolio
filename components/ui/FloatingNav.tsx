@@ -12,7 +12,7 @@ import Link from "next/link";
 type NavItem = {
     name: string;
     link: string;
-    icon?: JSX.Element; // JSX.Element should now work after fixing the types
+    icon?: React.Element; // JSX.Element should now work after fixing the types
 };
 
 export const FloatingNav = ({
