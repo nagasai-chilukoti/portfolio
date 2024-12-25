@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState } from "react"; // Import useState
 import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "@/utils/cn";
 
@@ -11,14 +11,16 @@ export const TextGenerateEffect = ({
     className?: string;
 }) => {
     const [scope, animate] = useAnimate();
-    const [isClient, setIsClient] = useState(false); // To check if we're on the client side
+    const [isClient, setIsClient] = useState(false); // State to track client-side rendering
 
     const wordsArray = words.split(" ");
 
+    // This effect will run once the component is mounted on the client
     useEffect(() => {
-        setIsClient(true); // This will run only on the client side
+        setIsClient(true); // Set state to true once mounted
     }, []);
 
+    // Ensure animate only runs on the client side (after component is mounted)
     useEffect(() => {
         if (isClient) {
             animate(
@@ -49,8 +51,9 @@ export const TextGenerateEffect = ({
         );
     };
 
+    // Render nothing until we are on the client side
     if (!isClient) {
-        return null; // Optionally render nothing or a loading spinner while waiting for client side render
+        return null; // Optionally, render a loading spinner or nothing until the component mounts
     }
 
     return (
