@@ -23,7 +23,7 @@ export const gridItems = [
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "/globe.jpeg",
+    img: "/globe.png",
     spareImg: "",
   },
   {
@@ -76,14 +76,76 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "Movie Ticket Booking Service",
-    des: "Developed a movie ticket booking platform using HTML,CSS and JS.",
-    img: "/ticket.jpg",
-    iconLists: [ "/ts.svg"],
-    link: "https://ticket-booking-ochre.vercel.app/",
+    title: "Real Estate App where you can easily find best place to live",
+    des: "Developed a dynamic real estate frontend application using React, Node Js and SCSS, enhancing user experience with responsive design and efficient component architecture.",
+    img: "/project-1.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/scss.svg"],
+    link: "https://github.com/Laiba-Aapa/real-estate-frontend",
   },
-  
-  
+  {
+    id: 2,
+    title: "Student Management System ",
+    des: "school management by organizing classes, managing students and faculty, tracking attendance, assessing performance, and facilitating communication",
+    img: "/project-2.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/c.svg"],
+    link: "https://student-management-system-laibae.vercel.app/",
+  },
+  {
+    id: 3,
+    title: "NextLevelFood Community sharing recipe over the internet.",
+    des: "An app where you can get recipies of your favourite food and also share. You can easily share images. Also you can joun the community. Project developed via Next Js and Node Js. ",
+    img: "project-3.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/next.svg"],
+    link: "https://nextlevelfoodies.vercel.app/",
+  },
+  {
+    id: 4,
+    title: "3D images slider",
+    des: "3D infinite images slider developed with HTML and CSS animation and maths coordinates.",
+    img: "/project-4.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://github.com/Laiba-Aapa/CSS-3D-Slider-",
+  },
+  {
+    id: 5,
+    title: "Weather Forecasting ",
+    des: "Get Weather update of any city of any country, developed with openWeather Api , using HTML CSS Javascript React and Fetch API. ",
+    img: "/project-5.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://weather-forcasting-app-six.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "Typing speed Testing ",
+    des: "Here you can test your typing speed easily. It will show you the scores you earned.developed using HTML CSS Javascript and React",
+    img: "/project-6.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://typing-speed-test-psi-one.vercel.app/",
+  },
+  {
+    id: 7,
+    title: "Piano Game",
+    des: "Play Piano Game with keyboard, the keys demonstrated on the piano. Developed via simple HTML CSS Javascript and React.",
+    img: "/project-7.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "https://pianoplay.vercel.app/",
+  },
+  {
+    id: 8,
+    title: "Tic Tac Toe ",
+    des: "Simple Tic Tac Toe Game developed via React Hooks. ",
+    img: "/project-8.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/c.svg"],
+    link: "https://tic-tac-toe-laiba.netlify.app/",
+  },
+  {
+    id: 9,
+    title: "Starbucks Animated Slider",
+    des: "Simple Starbucks Animated Slider build with HTML CSS and Javascript. ",
+    img: "/project-9.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/c.svg"],
+    link: "https://starbucks-animated-slider.vercel.app/",
+  },
 ];
 
 export const testimonials = [
@@ -155,37 +217,49 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Student Trainee",
-    desc: "Designed and implemented database tables for a web application on HRMS.",
+    title: "Frontend Engineer Intern",
+    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
+    id: 2,
+    title: "Mobile App Dev - JSM Tech",
+    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/exp2.svg",
+  },
+  {
+    id: 3,
+    title: "Freelance App Dev Project",
+    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    className: "md:col-span-2", // change to md:col-span-2
+    thumbnail: "/exp3.svg",
+  },
+  {
     id: 4,
-    title: "Machine learning internship",
-    desc: "internship on Iris tumor detection using CNN by Infosys springboard 5.0",
+    title: "Lead Frontend Developer",
+    desc: "Developed and maintained user-facing features using modern frontend technologies.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
-
-  
 ];
 
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
-    link:"https://github.com/nagasai-chilukoti",
+    link:"https://github.com/Laiba-Aapa",
   },
   
   {
     id: 2,
     img: "/link.svg",
-    link:"https://www.linkedin.com/in/nagasaichilukoti/",
+    link:"https://www.linkedin.com/in/laiba-asif-742b07247/",
   },
   {
     id: 3,
     img: "/whatsapp.png",
-    link:"https://wa.me/8179429762",
+    link:"https://wa.me/03176481367",
   },
 ];
